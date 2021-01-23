@@ -1,0 +1,3 @@
+Se implemento en la uniad 5 y 6, los metodos de busqueda y de ordenamiento, los metodso que 
+se utilizaron en este proyecto son: Burbuja y intercalacio, y los metodos de busqueda se implemento 
+el metodo secuencial

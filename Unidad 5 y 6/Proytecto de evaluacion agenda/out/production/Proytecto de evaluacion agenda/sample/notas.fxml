@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="477.0" maxWidth="910.0" minHeight="300.0" minWidth="500.0" prefHeight="477.0" prefWidth="910.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerNotas">
+   <children>
+      <ImageView fitHeight="539.0" fitWidth="851.0" layoutX="14.0" layoutY="28.0" opacity="0.23" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Circo.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="55.0" layoutY="10.0" prefHeight="221.0" prefWidth="580.0" stylesheets="@styles.css" />
+      <AnchorPane layoutX="56.0" layoutY="246.0" prefHeight="204.0" prefWidth="418.0" style="-fx-background-color: #FF1C1C;">
+         <children>
+            <TextField fx:id="tarea" layoutX="242.0" layoutY="110.0" promptText="Tarea" style="-fx-background-color: #FFD966;" />
+            <TextField fx:id="materia" layoutX="21.0" layoutY="64.0" promptText="Materia" style="-fx-background-color: #FFD966;" />
+            <TextField fx:id="dirección" layoutX="242.0" layoutY="64.0" promptText="Dirección" style="-fx-background-color: #FFD966;" />
+            <TextField fx:id="profesor" layoutX="21.0" layoutY="14.0" promptText="Nombre del profesor" style="-fx-background-color: #FFD966;" />
+            <ComboBox fx:id="ComboPrioridad" layoutX="21.0" layoutY="110.0" prefWidth="150.0" promptText="Prioridad " style="-fx-background-color: #FFD966;" />
+            <TextField fx:id="telefono" layoutX="242.0" layoutY="14.0" promptText="Telefono del maestro" style="-fx-background-color: #FFD966;" />
+            <Button fx:id="guardar" layoutX="24.0" layoutY="152.0" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #e45652;" text="Save entered data" textFill="#d0cccc" />
+            <Label fx:id="txtUsuario" layoutX="246.0" layoutY="156.0" prefHeight="17.0" prefWidth="140.0" text="Usuario" textFill="#d0cccc" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="690.0" layoutY="455.0" text="Derechos reservados a Carlos Martinez" textFill="#d0cccc" />
+      <AnchorPane layoutX="648.0" layoutY="10.0" prefHeight="221.0" prefWidth="257.0">
+         <children>
+            <Label layoutY="-7.0" prefHeight="43.0" prefWidth="263.0" text="Schedule 2020-2021" textFill="#d0cccc">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="-1.0" layoutY="36.0" prefHeight="93.0" prefWidth="283.0" text="Guarda todas tus tareas en un solo sitio, &#10;recuerda que la aplicación aun está en &#10;testeo  por lo cual puede contener &#10;errores. " textFill="#d0cccc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ornerdar" layoutX="113.0" layoutY="177.0" prefHeight="17.0" prefWidth="140.0" />
+            <TextField fx:id="txtOrden" layoutX="109.0" layoutY="137.0" prefHeight="25.0" prefWidth="149.0" promptText="Ingrese los numeros" style="-fx-background-color: #FFD966;" />
+            <Button fx:id="smile" layoutX="-1.0" layoutY="137.0" mnemonicParsing="false" onAction="#smile" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #e45652;" text="Ordenar" textFill="#d0cccc" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="guard" layoutX="512.0" layoutY="377.0" mnemonicParsing="false" onAction="#guard" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #e45652;" text="Save data " textFill="#d0cccc" />
+      <Label layoutX="512.0" layoutY="259.0" text="                       ¡¡OJO!!&#10;Introduce un nombre que recuerdes &#10;con facilidad. " textFill="#d0cccc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreArchivo" layoutX="512.0" layoutY="336.0" prefHeight="25.0" prefWidth="227.0" promptText="Nombre del archivo" style="-fx-background-color: #FFD966;" />
+      <Button fx:id="mostrar" layoutX="627.0" layoutY="377.0" mnemonicParsing="false" onAction="#mostrar" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #e45652;" text="Mostrar" textFill="#d0cccc" />
+      <Button fx:id="organizar" layoutX="804.0" layoutY="281.0" mnemonicParsing="false" onAction="#organizar" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #e45652;" text="Burbuja" textFill="#d0cccc" />
+      <Button fx:id="QuickShort" layoutX="806.0" layoutY="324.0" mnemonicParsing="false" onAction="#QuickShort" prefHeight="25.0" prefWidth="75.0" text="QuickShort" />
+   </children>
+</AnchorPane>
